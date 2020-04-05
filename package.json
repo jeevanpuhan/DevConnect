@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "start": "node server",
-    "devStart": "nodemon server"
+    "devStart": "nodemon server",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run devStart\" \"npm run client\""
   },
   "keywords": [],
   "author": "Brad Traversy",
